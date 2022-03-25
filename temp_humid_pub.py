@@ -28,11 +28,11 @@ while True:
         )
 
          # topic message
-         data = {}
-         data['timestamp'] = int(time.time()
-         data['temperature'] = temperature
-         data['humidity'] = humidity
-         msg_json_data = json.dumps(data)
+        data = {}
+        data['timestamp'] = int(time.time())
+        data['temperature'] = temperature_f
+        data['humidity'] = humidity
+        msg_json_data = json.dumps(data)
 
         # Publish the payload to the cloud
         publisher = pubsub_v1.PublisherClient()
