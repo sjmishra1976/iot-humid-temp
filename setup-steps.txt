@@ -1,0 +1,28 @@
+# create python virtual env
+cd DHT/
+python3 -m venv dhtvirutalenv
+# Activate virtual env, should see command prompt as (dhtvirtualenv)
+source ./dhtvirtualenv/bin/activate
+
+# update virtual env
+sudo apt-get update
+sudo apt-get install build essentail python3-dev 
+sudo apt-get install git
+
+# get adafruit lib
+git clone https://github.com/adafruit/Adafruit_Python_DHT.git
+cd Adafruit_Python_DHT/
+python setup.py install
+
+
+
+
+
+
+
+
+
+
+https://dl.espressif.com/dl/package_esp32_index.json for Arduino board IDE for esp32 support
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+

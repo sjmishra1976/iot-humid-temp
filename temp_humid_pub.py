@@ -35,6 +35,7 @@ while True:
          msg_json_data = json.dumps(data)
 
         # Publish the payload to the cloud
+        publisher = pubsub_v1.PublisherClient()
         publisher.publish(topic_path, data=msg_json_data.encode('utf-8'))
 
         print("Publishing the message : " + msg_json_data)
